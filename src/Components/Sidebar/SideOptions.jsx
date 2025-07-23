@@ -12,6 +12,7 @@ import HeartBrokenOutlinedIcon from '@mui/icons-material/HeartBrokenOutlined';
 import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 import BorderColorOutlinedIcon from '@mui/icons-material/BorderColorOutlined';
 import MeetingRoomOutlinedIcon from '@mui/icons-material/MeetingRoomOutlined';
+import { NavLink } from "react-router-dom";
 import "./Sidebar.css"
 
 const SideOptions = () => {
@@ -20,18 +21,37 @@ const SideOptions = () => {
       <div className="m-2">
         <span className="text-gray-400 ms-1">Recent</span>
         <ul className="flex-col text-center mt-2 text-white">
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 active">
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <HomeOutlinedIcon />
             <li className="cursor-pointer">Home</li>
-          </div>
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          </NavLink>
+          <NavLink
+            to="/users"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <PeopleAltOutlinedIcon />
             <li className="cursor-pointer">Users</li>
-          </div>
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          </NavLink>
+          <NavLink
+            to="/products"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <CategoryOutlinedIcon />
             <li className="cursor-pointer">Products</li>
-          </div>
+          </NavLink>
           <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
             <RememberMeOutlinedIcon />
             <li className="cursor-pointer">Members</li>
