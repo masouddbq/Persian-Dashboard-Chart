@@ -3,6 +3,7 @@ import { supabase } from '../../supabaseClient';
 import { IconButton } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -41,7 +42,9 @@ const Products = () => {
                   <td className="py-3 px-4">{idx + 1}</td>
                   <td className="py-3 px-4 flex items-center gap-2">
                     <img src={product.image || '/user.jpg'} alt="product" className="w-8 h-8 rounded-full object-cover border" />
-                    <span>{product.name}</span>
+                    <Link to={`/product/${product.id}`} className="text-blue-700 hover:underline">
+                      <span>{product.name}</span>
+                    </Link>
                   </td>
                   <td className="py-3 px-4">{product.price}</td>
                   <td className="py-3 px-4 flex gap-2">
