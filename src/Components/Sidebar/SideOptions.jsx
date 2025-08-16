@@ -52,56 +52,116 @@ const SideOptions = () => {
             <CategoryOutlinedIcon />
             <li className="cursor-pointer">Products</li>
           </NavLink>
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          <NavLink
+            to="/members"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <RememberMeOutlinedIcon />
             <li className="cursor-pointer">Members</li>
-          </div>
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          </NavLink>
+          <NavLink
+            to="/plans"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <SignpostOutlinedIcon />
             <li className="cursor-pointer">Plans</li>
-          </div>
+          </NavLink>
         </ul>
       </div>
       <div className="m-2">
         <span className="text-gray-400 ms-1">Reoprts</span>
         <ul className="flex-col text-center mt-2 text-white">
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          <NavLink
+            to="/analytics"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <AreaChartOutlinedIcon />
             <li className="cursor-pointer">Analytics</li>
-          </div>
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          </NavLink>
+          <NavLink
+            to="/discounts"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <DiscountOutlinedIcon />
             <li className="cursor-pointer">Discounts</li>
-          </div>
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          </NavLink>
+          <NavLink
+            to="/common-goods"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <TagOutlinedIcon />
             <li className="cursor-pointer">Common goods</li>
-          </div>
+          </NavLink>
         </ul>
       </div>
       <div className="m-2">
         <span className="text-gray-400 ms-1">Feedback</span>
         <ul className="flex-col text-center mt-2 text-white">
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          <NavLink
+            to="/comments"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <SmsOutlinedIcon />
             <li className="cursor-pointer">Comments</li>
-          </div>
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          </NavLink>
+          <NavLink
+            to="/breakdowns"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <HeartBrokenOutlinedIcon />
             <li className="cursor-pointer">Breakdowns</li>
-          </div>
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          </NavLink>
+          <NavLink
+            to="/cooperation"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <GroupsOutlinedIcon />
             <li className="cursor-pointer">Cooperation</li>
-          </div>
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          </NavLink>
+          <NavLink
+            to="/new-order"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <BorderColorOutlinedIcon />
             <li className="cursor-pointer">New-order</li>
-          </div>
-          <div className="flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100">
+          </NavLink>
+          <NavLink
+            to="/logout"
+            className={({ isActive }) =>
+              "flex justify-start m-2 hover:bg-slate-700 hover:rounded-lg transition-all duration-100 items-center" +
+              (isActive ? " active" : "")
+            }
+          >
             <MeetingRoomOutlinedIcon />
             <li className="cursor-pointer">Logout</li>
-          </div>
+          </NavLink>
         </ul>
       </div>
     </div>
