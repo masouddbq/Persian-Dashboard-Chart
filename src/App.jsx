@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div>
-      <div className="flex justify-between ml-52">
+      <div className="flex justify-between mr-52">
         <Sidebar />
         {router}
       </div>

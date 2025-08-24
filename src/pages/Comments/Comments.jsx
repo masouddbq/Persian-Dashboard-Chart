@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 const initialComments = [
-  { id: 1, user: 'Masoud', text: 'Everything looks great!', date: '2024-06-01' },
-  { id: 2, user: 'Ali', text: 'Please add dark mode.', date: '2024-06-02' },
+  { id: 1, user: 'مسعود', text: 'همه چیز عالیه!', date: '2024-06-01' },
+  { id: 2, user: 'علی', text: 'لطفا حالت تیره اضافه کنید.', date: '2024-06-02' },
 ]
 
 const Comments = () => {
@@ -20,11 +20,11 @@ const Comments = () => {
 
   return (
     <div className="w-full px-8 py-6">
-      <h2 className="text-3xl font-bold text-blue-900 mb-6">Comments</h2>
+      <h2 className="text-3xl font-bold text-blue-900 mb-6">نظرات</h2>
       <div className="bg-white rounded-lg shadow p-4 mb-4">
         <div className="flex gap-2">
-          <input value={text} onChange={(e) => setText(e.target.value)} placeholder="Write a comment..." className="border rounded px-3 py-2 w-full" />
-          <button onClick={addComment} className="bg-blue-800 hover:bg-blue-900 text-white px-4 rounded">Add</button>
+          <input value={text} onChange={(e) => setText(e.target.value)} placeholder="نظر خود را بنویسید..." className="border rounded px-3 py-2 w-full" />
+          <button onClick={addComment} className="bg-blue-800 hover:bg-blue-900 text-white px-4 rounded">افزودن</button>
         </div>
       </div>
       <div className="space-y-3">

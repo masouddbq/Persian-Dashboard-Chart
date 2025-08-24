@@ -19,24 +19,24 @@ const User = () => {
 
   return (
     <div className="w-full px-8 py-6">
-      <h2 className="text-3xl font-bold text-blue-900 mb-6">Users</h2>
+      <h2 className="text-3xl font-bold text-blue-900 mb-6">کاربران</h2>
       <div className="bg-white rounded-lg shadow overflow-x-auto">
         <table className="min-w-full text-left">
           <thead>
             <tr className="border-b text-gray-600">
-              <th className="py-3 px-4">ID</th>
-              <th className="py-3 px-4">User</th>
-              <th className="py-3 px-4">Email</th>
-              <th className="py-3 px-4">Status</th>
-              <th className="py-3 px-4">Transaction</th>
-              <th className="py-3 px-4">Action</th>
+              <th className="py-3 px-4">ردیف</th>
+              <th className="py-3 px-4">کاربر</th>
+              <th className="py-3 px-4">ایمیل</th>
+              <th className="py-3 px-4">وضعیت</th>
+              <th className="py-3 px-4">تراکنش</th>
+              <th className="py-3 px-4">عملیات</th>
             </tr>
           </thead>
           <tbody>
             {loading ? (
-              <tr><td colSpan={6} className="text-center py-6">Loading...</td></tr>
+              <tr><td colSpan={6} className="text-center py-6">در حال بارگذاری...</td></tr>
             ) : users.length === 0 ? (
-              <tr><td colSpan={6} className="text-center py-6">No users found.</td></tr>
+              <tr><td colSpan={6} className="text-center py-6">کاربری یافت نشد.</td></tr>
             ) : (
               users.map((user, idx) => (
                 <tr key={user.id} className="border-b hover:bg-gray-50 transition">
@@ -52,12 +52,12 @@ const User = () => {
                         ? 'text-green-600 font-semibold'
                         : 'text-gray-400 font-semibold'
                     }>
-                      {user.status}
+                      {user.status === 'active' ? 'فعال' : 'غیرفعال'}
                     </span>
                   </td>
                   <td className="py-3 px-4">{user.transaction ? `$${user.transaction}` : '$0'}</td>
                   <td className="py-3 px-4 flex gap-2">
-                    <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-1 rounded transition text-sm">Edit</button>
+                    <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-1 rounded transition text-sm">ویرایش</button>
                     <IconButton size="small" color="error">
                       <DeleteIcon />
                     </IconButton>

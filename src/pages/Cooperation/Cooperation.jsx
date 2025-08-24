@@ -9,14 +9,14 @@ const partners = [
 const Cooperation = () => {
   return (
     <div className="w-full px-8 py-6">
-      <h2 className="text-3xl font-bold text-blue-900 mb-6">Cooperation</h2>
+      <h2 className="text-3xl font-bold text-blue-900 mb-6">همکاری</h2>
       <div className="bg-white rounded-lg shadow overflow-x-auto">
         <table className="min-w-full text-left">
           <thead>
             <tr className="border-b text-gray-600">
-              <th className="py-3 px-4">ID</th>
-              <th className="py-3 px-4">Name</th>
-              <th className="py-3 px-4">Contact</th>
+              <th className="py-3 px-4">شناسه</th>
+              <th className="py-3 px-4">نام</th>
+              <th className="py-3 px-4">تماس</th>
             </tr>
           </thead>
           <tbody>

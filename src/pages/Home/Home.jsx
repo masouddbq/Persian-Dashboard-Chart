@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="text-center w-full">
       <HomeFeatures />
-      <Chart grid title="Monthly Sales" data={xAxisData} dataKey="sale" />
+      <Chart grid title="فروش ماهانه" data={xAxisData} dataKey="sale" />
       <div className="flex">
       <WidgetSm />
       </div>

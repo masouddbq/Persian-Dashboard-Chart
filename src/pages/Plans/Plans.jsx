@@ -9,7 +9,7 @@ const plans = [
 const Plans = () => {
   return (
     <div className="w-full px-8 py-6">
-      <h2 className="text-3xl font-bold text-blue-900 mb-6">Plans</h2>
+      <h2 className="text-3xl font-bold text-blue-900 mb-6">طرح‌ها</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {plans.map((p) => (
           <div key={p.name} className="bg-white rounded-xl shadow p-6 border">

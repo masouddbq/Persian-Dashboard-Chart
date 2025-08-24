@@ -20,22 +20,22 @@ const Products = () => {
 
   return (
     <div className="w-full px-8 py-6">
-      <h2 className="text-3xl font-bold text-blue-900 mb-6">Products</h2>
+      <h2 className="text-3xl font-bold text-blue-900 mb-6">محصولات</h2>
       <div className="bg-white rounded-lg shadow overflow-x-auto">
         <table className="min-w-full text-left">
           <thead>
             <tr className="border-b text-gray-600">
-              <th className="py-3 px-4">ID</th>
-              <th className="py-3 px-4">Name</th>
-              <th className="py-3 px-4">Price</th>
-              <th className="py-3 px-4">Action</th>
+              <th className="py-3 px-4">ردیف</th>
+              <th className="py-3 px-4">نام</th>
+              <th className="py-3 px-4">قیمت</th>
+              <th className="py-3 px-4">عملیات</th>
             </tr>
           </thead>
           <tbody>
             {loading ? (
-              <tr><td colSpan={4} className="text-center py-6">Loading...</td></tr>
+              <tr><td colSpan={4} className="text-center py-6">در حال بارگذاری...</td></tr>
             ) : products.length === 0 ? (
-              <tr><td colSpan={4} className="text-center py-6">No products found.</td></tr>
+              <tr><td colSpan={4} className="text-center py-6">محصولی یافت نشد.</td></tr>
             ) : (
               products.map((product, idx) => (
                 <tr key={product.id} className="border-b hover:bg-gray-50 transition">
@@ -48,7 +48,7 @@ const Products = () => {
                   </td>
                   <td className="py-3 px-4">{product.price}</td>
                   <td className="py-3 px-4 flex gap-2">
-                    <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-1 rounded transition text-sm">Edit</button>
+                    <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-1 rounded transition text-sm">ویرایش</button>
                     <IconButton size="small" color="error">
                       <DeleteIcon />
                     </IconButton>

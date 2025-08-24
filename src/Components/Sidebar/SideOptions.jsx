@@ -19,7 +19,7 @@ const SideOptions = () => {
   return (
     <div className="flex-col justify-center items-center">
       <div className="m-2">
-        <span className="text-gray-400 ms-1">Recent</span>
+        <span className="text-gray-400 ms-1">اخیر</span>
         <ul className="flex-col text-center mt-2 text-white">
           <NavLink
             to="/"
@@ -30,7 +30,7 @@ const SideOptions = () => {
             }
           >
             <HomeOutlinedIcon />
-            <li className="cursor-pointer">Home</li>
+            <li className="cursor-pointer">خانه</li>
           </NavLink>
           <NavLink
             to="/users"
@@ -40,7 +40,7 @@ const SideOptions = () => {
             }
           >
             <PeopleAltOutlinedIcon />
-            <li className="cursor-pointer">Users</li>
+            <li className="cursor-pointer">کاربران</li>
           </NavLink>
           <NavLink
             to="/products"
@@ -50,7 +50,7 @@ const SideOptions = () => {
             }
           >
             <CategoryOutlinedIcon />
-            <li className="cursor-pointer">Products</li>
+            <li className="cursor-pointer">محصولات</li>
           </NavLink>
           <NavLink
             to="/members"
@@ -60,7 +60,7 @@ const SideOptions = () => {
             }
           >
             <RememberMeOutlinedIcon />
-            <li className="cursor-pointer">Members</li>
+            <li className="cursor-pointer">اعضا</li>
           </NavLink>
           <NavLink
             to="/plans"
@@ -70,12 +70,12 @@ const SideOptions = () => {
             }
           >
             <SignpostOutlinedIcon />
-            <li className="cursor-pointer">Plans</li>
+            <li className="cursor-pointer">طرح‌ها</li>
           </NavLink>
         </ul>
       </div>
       <div className="m-2">
-        <span className="text-gray-400 ms-1">Reoprts</span>
+        <span className="text-gray-400 ms-1">گزارش‌ها</span>
         <ul className="flex-col text-center mt-2 text-white">
           <NavLink
             to="/analytics"
@@ -85,7 +85,7 @@ const SideOptions = () => {
             }
           >
             <AreaChartOutlinedIcon />
-            <li className="cursor-pointer">Analytics</li>
+            <li className="cursor-pointer">تحلیل‌ها</li>
           </NavLink>
           <NavLink
             to="/discounts"
@@ -95,7 +95,7 @@ const SideOptions = () => {
             }
           >
             <DiscountOutlinedIcon />
-            <li className="cursor-pointer">Discounts</li>
+            <li className="cursor-pointer">تخفیف‌ها</li>
           </NavLink>
           <NavLink
             to="/common-goods"
@@ -105,12 +105,12 @@ const SideOptions = () => {
             }
           >
             <TagOutlinedIcon />
-            <li className="cursor-pointer">Common goods</li>
+            <li className="cursor-pointer">کالاهای عمومی</li>
           </NavLink>
         </ul>
       </div>
       <div className="m-2">
-        <span className="text-gray-400 ms-1">Feedback</span>
+        <span className="text-gray-400 ms-1">بازخورد</span>
         <ul className="flex-col text-center mt-2 text-white">
           <NavLink
             to="/comments"
@@ -120,7 +120,7 @@ const SideOptions = () => {
             }
           >
             <SmsOutlinedIcon />
-            <li className="cursor-pointer">Comments</li>
+            <li className="cursor-pointer">نظرات</li>
           </NavLink>
           <NavLink
             to="/breakdowns"
@@ -130,7 +130,7 @@ const SideOptions = () => {
             }
           >
             <HeartBrokenOutlinedIcon />
-            <li className="cursor-pointer">Breakdowns</li>
+            <li className="cursor-pointer">خرابی‌ها</li>
           </NavLink>
           <NavLink
             to="/cooperation"
@@ -140,7 +140,7 @@ const SideOptions = () => {
             }
           >
             <GroupsOutlinedIcon />
-            <li className="cursor-pointer">Cooperation</li>
+            <li className="cursor-pointer">همکاری</li>
           </NavLink>
           <NavLink
             to="/new-order"
@@ -150,7 +150,7 @@ const SideOptions = () => {
             }
           >
             <BorderColorOutlinedIcon />
-            <li className="cursor-pointer">New-order</li>
+            <li className="cursor-pointer">سفارش جدید</li>
           </NavLink>
           <NavLink
             to="/logout"
@@ -160,7 +160,7 @@ const SideOptions = () => {
             }
           >
             <MeetingRoomOutlinedIcon />
-            <li className="cursor-pointer">Logout</li>
+            <li className="cursor-pointer">خروج</li>
           </NavLink>
         </ul>
       </div>

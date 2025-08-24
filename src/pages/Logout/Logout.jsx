@@ -11,8 +11,8 @@ const Logout = () => {
 
   return (
     <div className="w-full px-8 py-6">
-      <h2 className="text-2xl font-bold text-blue-900 mb-2">Logging out...</h2>
-      <p className="text-gray-600">This is a mock page. You will be redirected to Home.</p>
+      <h2 className="text-2xl font-bold text-blue-900 mb-2">در حال خروج...</h2>
+      <p className="text-gray-600">این صفحه نمونه است و به خانه هدایت می‌شوید.</p>
     </div>
   )
 }

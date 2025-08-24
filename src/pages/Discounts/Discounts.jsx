@@ -9,15 +9,15 @@ const discounts = [
 const Discounts = () => {
   return (
     <div className="w-full px-8 py-6">
-      <h2 className="text-3xl font-bold text-blue-900 mb-6">Discounts</h2>
+      <h2 className="text-3xl font-bold text-blue-900 mb-6">تخفیف‌ها</h2>
       <div className="bg-white rounded-lg shadow overflow-x-auto">
         <table className="min-w-full text-left">
           <thead>
             <tr className="border-b text-gray-600">
-              <th className="py-3 px-4">Code</th>
-              <th className="py-3 px-4">Percent</th>
-              <th className="py-3 px-4">Usage</th>
-              <th className="py-3 px-4">Status</th>
+              <th className="py-3 px-4">کد</th>
+              <th className="py-3 px-4">درصد</th>
+              <th className="py-3 px-4">تعداد استفاده</th>
+              <th className="py-3 px-4">وضعیت</th>
             </tr>
           </thead>
           <tbody>
@@ -28,7 +28,7 @@ const Discounts = () => {
                 <td className="py-3 px-4">{d.usage}</td>
                 <td className="py-3 px-4">
                   <span className={d.active ? 'text-green-600 font-semibold' : 'text-gray-400 font-semibold'}>
-                    {d.active ? 'Active' : 'Inactive'}
+                    {d.active ? 'فعال' : 'غیرفعال'}
                   </span>
                 </td>
               </tr>

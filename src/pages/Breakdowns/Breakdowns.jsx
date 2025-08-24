@@ -13,15 +13,15 @@ const Badge = ({ children, color }) => (
 const Breakdowns = () => {
   return (
     <div className="w-full px-8 py-6">
-      <h2 className="text-3xl font-bold text-blue-900 mb-6">Breakdowns</h2>
+      <h2 className="text-3xl font-bold text-blue-900 mb-6">خرابی‌ها</h2>
       <div className="bg-white rounded-lg shadow overflow-x-auto">
         <table className="min-w-full text-left">
           <thead>
             <tr className="border-b text-gray-600">
-              <th className="py-3 px-4">ID</th>
-              <th className="py-3 px-4">Title</th>
-              <th className="py-3 px-4">Severity</th>
-              <th className="py-3 px-4">Status</th>
+              <th className="py-3 px-4">شناسه</th>
+              <th className="py-3 px-4">عنوان</th>
+              <th className="py-3 px-4">شدت</th>
+              <th className="py-3 px-4">وضعیت</th>
             </tr>
           </thead>
           <tbody>
@@ -31,12 +31,12 @@ const Breakdowns = () => {
                 <td className="py-3 px-4">{i.title}</td>
                 <td className="py-3 px-4">
                   <Badge color={i.severity === 'High' ? 'bg-red-600' : i.severity === 'Medium' ? 'bg-yellow-500' : 'bg-gray-500'}>
-                    {i.severity}
+                    {i.severity === 'High' ? 'بالا' : i.severity === 'Medium' ? 'متوسط' : 'کم'}
                   </Badge>
                 </td>
                 <td className="py-3 px-4">
                   <Badge color={i.status === 'Open' ? 'bg-blue-600' : i.status === 'Investigating' ? 'bg-indigo-600' : 'bg-green-600'}>
-                    {i.status}
+                    {i.status === 'Open' ? 'باز' : i.status === 'Investigating' ? 'در حال بررسی' : 'حل شده'}
                   </Badge>
                 </td>
               </tr>
