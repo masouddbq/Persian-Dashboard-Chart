@@ -4,18 +4,44 @@
 
 @font-face {
   font-family: 'Pinar';
-  src: url('/fonts/Pinar-DS4-Regular.ttf');
+  src: url('/fonts/Pinar-DS4-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
 }
 
 @layer base {
   html {
-    font-family: 'Pinar', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-family: 'Pinar', 'Tahoma', 'Arial', sans-serif;
     direction: rtl;
-  }
-  body {
     text-align: right;
+    unicode-bidi: embed;
+  }
+  
+  body {
+    font-family: 'Pinar', 'Tahoma', 'Arial', sans-serif;
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: embed;
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Ensure RTL for all text elements */
+  h1, h2, h3, h4, h5, h6, p, span, div, li, a, button, input, textarea, label {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: embed;
+  }
+  
+  /* Fix for Material-UI icons in RTL */
+  .MuiSvgIcon-root {
+    direction: ltr;
+    text-align: center;
   }
 }

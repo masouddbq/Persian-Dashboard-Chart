@@ -1,12 +1,117 @@
-# React + Vite
+# پنل مدیریت فارسی - Persian Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+این یک پنل مدیریت React است که به زبان فارسی طراحی شده و از RTL (راست به چپ) پشتیبانی می‌کند.
 
-Currently, two official plugins are available:
+## ویژگی‌ها
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ پشتیبانی کامل از زبان فارسی
+- ✅ طراحی RTL (راست به چپ)
+- ✅ فونت اختصاصی Pinar
+- ✅ رابط کاربری مدرن و زیبا
+- ✅ کامپوننت‌های Material-UI
+- ✅ Tailwind CSS برای استایل‌دهی
 
-## Expanding the ESLint configuration
+## نصب و راه‌اندازی
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### پیش‌نیازها
+
+- Node.js (نسخه 18 یا بالاتر)
+- npm یا yarn
+
+### نصب dependencies
+
+```bash
+npm install
+```
+
+### اجرای پروژه در محیط توسعه
+
+```bash
+npm run dev
+```
+
+### ساخت نسخه production
+
+```bash
+npm run build
+```
+
+## تنظیمات زبان فارسی
+
+### فایل‌های مهم
+
+1. **`index.html`**: تنظیمات `lang="fa-IR"` و `dir="rtl"`
+2. **`tailwind.config.js`**: تنظیمات فونت و RTL
+3. **`index.css`**: تعریف فونت Pinar و تنظیمات RTL
+4. **`.gitattributes`**: اطمینان از ذخیره صحیح فایل‌های فارسی
+5. **`vercel.json`**: تنظیمات deployment در Vercel
+
+### نکات مهم برای Deployment
+
+#### Vercel
+- فایل `vercel.json` تنظیمات زبان فارسی را تضمین می‌کند
+- Headers مناسب برای `Content-Type` و `Content-Language` تنظیم شده
+
+#### GitHub
+- فایل `.gitattributes` اطمینان می‌دهد که فایل‌های فارسی درست ذخیره شوند
+- تمام فایل‌ها با encoding UTF-8 ذخیره می‌شوند
+
+## ساختار پروژه
+
+```
+src/
+├── Components/          # کامپوننت‌های اصلی
+│   ├── Sidebar/        # نوار کناری
+│   ├── Chart/          # نمودارها
+│   └── WidgetSm/       # ویجت‌های کوچک
+├── pages/              # صفحات مختلف
+├── assets/             # فایل‌های استاتیک
+└── routes.jsx          # مسیریابی
+```
+
+## فونت‌ها
+
+پروژه از فونت اختصاصی **Pinar** استفاده می‌کند که در پوشه `public/fonts/` قرار دارد.
+
+## استایل‌دهی
+
+- **Tailwind CSS**: برای استایل‌دهی اصلی
+- **CSS Modules**: برای استایل‌های اختصاصی
+- **Material-UI**: برای کامپوننت‌های UI
+
+## نکات فنی
+
+### RTL Support
+- تمام المان‌ها با `direction: rtl` تنظیم شده‌اند
+- استفاده از کلاس‌های Tailwind برای RTL
+- تنظیمات CSS برای اطمینان از نمایش صحیح
+
+### Persian Text
+- تمام متن‌ها به زبان فارسی
+- تنظیمات `unicode-bidi: embed` برای متن‌های فارسی
+- پشتیبانی از کاراکترهای خاص فارسی
+
+## عیب‌یابی
+
+### مشکل نمایش متن فارسی
+1. اطمینان از وجود فایل `vercel.json`
+2. بررسی تنظیمات `tailwind.config.js`
+3. اطمینان از وجود فایل `.gitattributes`
+
+### مشکل RTL
+1. بررسی تنظیمات CSS در `index.css`
+2. اطمینان از وجود `dir="rtl"` در HTML
+3. بررسی کلاس‌های Tailwind
+
+## مشارکت
+
+برای مشارکت در پروژه، لطفاً:
+
+1. Fork کنید
+2. Branch جدید ایجاد کنید
+3. تغییرات را commit کنید
+4. Pull Request ارسال کنید
+
+## لایسنس
+
+این پروژه تحت لایسنس MIT منتشر شده است.

@@ -4,7 +4,18 @@ export default {
         "./src/**/*.{js,jsx,ts,tsx}"
     ],
     theme : {
-        extend :{}
+        extend :{
+            fontFamily: {
+                'pinar': ['Pinar', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Tahoma', 'Arial', 'sans-serif'],
+            },
+            direction: {
+                'rtl': 'rtl',
+                'ltr': 'ltr',
+            }
+        }
     },
-    plugins : []
+    plugins : [],
+    corePlugins: {
+        preflight: false,
+    }
 }

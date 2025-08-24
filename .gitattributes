@@ -1,0 +1,15 @@
+# Ensure proper handling of Persian text files
+*.jsx text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+
+# Force UTF-8 encoding for all text files
+*.jsx encoding=utf-8
+*.js encoding=utf-8
+*.css encoding=utf-8
+*.html encoding=utf-8
+*.md encoding=utf-8
+*.json encoding=utf-8
